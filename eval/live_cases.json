@@ -1,0 +1,22 @@
+[
+  {"name":"assertion","source":"John sent the report to Mary."},
+  {"name":"negation","source":"John did not send the report."},
+  {"name":"modal_negation","source":"Alice may not approve the proposal."},
+  {"name":"prohibition","source":"Alice must not open the door."},
+  {"name":"passive","source":"The report was approved by Mary."},
+  {"name":"copular_negation","source":"John is not tired."},
+  {"name":"yes_no_question","source":"Did Alice approve the proposal?"},
+  {"name":"why_question","source":"Why did Alice reject it?"},
+  {"name":"embedded_question","source":"I know why John left."},
+  {"name":"imperative","source":"Send the report to Mary."},
+  {"name":"condition","source":"If Alice approves the proposal, Bob will deploy it."},
+  {"name":"unless","source":"Unless Mary approves the report, John will not send it."},
+  {"name":"cause","source":"John left because Mary arrived."},
+  {"name":"temporal_once","source":"John left once Mary arrived."},
+  {"name":"infinitive","source":"John wants to leave."},
+  {"name":"object_control","source":"Mary persuaded John to leave."},
+  {"name":"coordination","source":"John reviewed and approved the draft."},
+  {"name":"relative_clause","source":"The engineer who reviewed the report found an error."},
+  {"name":"quantifier","source":"Not every student passed the exam."},
+  {"name":"nested_clauses","source":"Although John was tired, he did not send the report because Mary had not approved it yet."}
+]

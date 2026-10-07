@@ -1,0 +1,7 @@
+[
+  {"name":"negation","source":"John did not send the report.","expected":"ASSERT: John did not send the report."},
+  {"name":"yes_no_question","source":"Did Alice approve the proposal?","expected":"ASK WHETHER: Alice did approve the proposal."},
+  {"name":"imperative","source":"Send the report to Mary.","expected":"COMMAND: Send the report to Mary."},
+  {"name":"causal","source":"John left because Mary arrived.","expected":"ASSERT: John left because Mary arrived."},
+  {"name":"passive","source":"The report was approved by Mary.","expected":"ASSERT: The report was approved by Mary."}
+]

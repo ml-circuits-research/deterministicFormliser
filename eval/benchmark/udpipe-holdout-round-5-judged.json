@@ -1,0 +1,958 @@
+{
+  "parser": "udpipe",
+  "split": "holdout",
+  "round": 5,
+  "analysis_sha256": "b82bd261a02694b4b8566d30efee9a8c0a6319c2fec5ecae301ab98efc835c2e",
+  "renderer_sha256": "f2b1216c9838c7ab942798279ef85feed61ef95f60b5ae6af7ab6144347e48da",
+  "rows": [
+    {
+      "case": {
+        "id": "h01",
+        "split": "holdout",
+        "phenomenon": "passive plus cause",
+        "source": "The flight was cancelled by the airline because heavy snow had closed the runway."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The flight was cancelled by the airline because heavy snow had closed the runway.",
+        "cnl": "ASSERT: The flight was cancelled by the airline because heavy snow had closed the runway.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The flight was cancelled by the airline because heavy snow had closed the runway.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h02",
+        "split": "holdout",
+        "phenomenon": "embedded question",
+        "source": "Nobody knows why the alarm stopped working during the night."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Nobody knows why the alarm stopped working during the night.",
+        "cnl": "ASSERT: Nobody knows why the alarm stopped working during the night.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Nobody knows why the alarm stopped working during the night.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h03",
+        "split": "holdout",
+        "phenomenon": "wh object question",
+        "source": "Which apartment did the agent show you after lunch?"
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Which apartment did the agent show you after lunch?",
+        "cnl": "ASK WHICH: Which apartment did the agent show you after lunch.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_WH",
+            "text": "ASK WHICH: Which apartment did the agent show you after lunch.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h04",
+        "split": "holdout",
+        "phenomenon": "negative request",
+        "source": "Please do not give the patient another dose until the doctor returns."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Please do not give the patient another dose until the doctor returns.",
+        "cnl": "COMMAND: Please do not give the patient until the doctor returns.",
+        "coverage": 0.8333333333333334,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "COMMAND",
+            "text": "COMMAND: Please do not give the patient until the doctor returns.",
+            "coverage": 0.8333333333333334,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [
+              {
+                "id": 7,
+                "text": "another",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 8,
+                "text": "dose",
+                "deprel": "obj",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: another/det, dose/obj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: another/det, dose/obj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Parser attaches dose as object of patient; NP renderer drops that unsupported argument",
+        "attribution": "mixed",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h05",
+        "split": "holdout",
+        "phenomenon": "relative clause",
+        "source": "The laptop that I bought last month has already stopped charging."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The laptop that I bought last month has already stopped charging.",
+        "cnl": "ASSERT: The laptop that I bought last month has stopped charging already.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The laptop that I bought last month has stopped charging already.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h06",
+        "split": "holdout",
+        "phenomenon": "interjection mixture",
+        "source": "Wow! The garden looks beautiful, but the gate still needs to be repaired."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Wow! The garden looks beautiful, but the gate still needs to be repaired.",
+        "cnl": "EXPRESS: Wow!\nASSERT: The garden looks beautiful but the gate needs to be repaired still.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "EXPRESS",
+            "text": "EXPRESS: Wow!",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 2,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The garden looks beautiful but the gate needs to be repaired still.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h07",
+        "split": "holdout",
+        "phenomenon": "quantifier",
+        "source": "Not all passengers were able to find a seat."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Not all passengers were able to find a seat.",
+        "cnl": "ASSERT: Not all passengers were able to find a seat.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Not all passengers were able to find a seat.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h08",
+        "split": "holdout",
+        "phenomenon": "control",
+        "source": "The coach reminded the players to drink water before the match."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The coach reminded the players to drink water before the match.",
+        "cnl": "ASSERT: The coach reminded the players to drink water before the match.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The coach reminded the players to drink water before the match.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h09",
+        "split": "holdout",
+        "phenomenon": "long condition",
+        "source": "If the laboratory confirms the result and the patient agrees, the doctor will change the treatment after discussing the possible side effects."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "If the laboratory confirms the result and the patient agrees, the doctor will change the treatment after discussing the possible side effects.",
+        "cnl": "ASSERT: If the laboratory confirms the result and the patient agrees, the doctor will change the treatment after discussing the possible side effects.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: If the laboratory confirms the result and the patient agrees, the doctor will change the treatment after discussing the possible side effects.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h10",
+        "split": "holdout",
+        "phenomenon": "direct quotation",
+        "source": "The guard shouted, \"Stop!\""
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The guard shouted, \"Stop!\"",
+        "cnl": "ASSERT: The guard shouted \"Stop!\"",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The guard shouted \"Stop!\"",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h11",
+        "split": "holdout",
+        "phenomenon": "fragment",
+        "source": "A table for four, please."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "A table for four, please.",
+        "cnl": "REQUEST: A table for four, please.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "REQUEST",
+            "text": "REQUEST: A table for four, please.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h12",
+        "split": "holdout",
+        "phenomenon": "existential negation",
+        "source": "There are no available appointments before Thursday."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "There are no available appointments before Thursday.",
+        "cnl": "ASSERT: There are no available appointments before Thursday.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: There are no available appointments before Thursday.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h13",
+        "split": "holdout",
+        "phenomenon": "shared auxiliary",
+        "source": "The volunteers have cleaned and painted the community hall."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The volunteers have cleaned and painted the community hall.",
+        "cnl": "ASSERT: The volunteers have cleaned and painted the community hall.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The volunteers have cleaned and painted the community hall.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h14",
+        "split": "holdout",
+        "phenomenon": "negative coordination",
+        "source": "The applicant did not upload or sign the required documents."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The applicant did not upload or sign the required documents.",
+        "cnl": "ASSERT: The applicant did not upload or sign the required documents.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The applicant did not upload or sign the required documents.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h15",
+        "split": "holdout",
+        "phenomenon": "tag question",
+        "source": "The new password works, doesn't it?"
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "The new password works, doesn't it?",
+        "cnl": "ASK CONFIRM: The new password works; TAG: doesn't it.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_TAG",
+            "text": "ASK CONFIRM: The new password works; TAG: doesn't it.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h16",
+        "split": "holdout",
+        "phenomenon": "counterfactual",
+        "source": "If the driver had noticed the sign, she would not have entered the private road."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "If the driver had noticed the sign, she would not have entered the private road.",
+        "cnl": "ASSERT: If the driver had noticed the sign, she would not have entered the private road.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: If the driver had noticed the sign, she would not have entered the private road.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h17",
+        "split": "holdout",
+        "phenomenon": "long indirect question",
+        "source": "Could you explain why the bill includes a delivery fee even though the website promised free shipping for orders above thirty euros?"
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Could you explain why the bill includes a delivery fee even though the website promised free shipping for orders above thirty euros?",
+        "cnl": "ASK WHETHER: you could explain why the bill includes a delivery fee though even the website even promised free shipping for orders above thirty euros.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: you could explain why the bill includes a delivery fee though even the website even promised free shipping for orders above thirty euros.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Parser makes shipping rather than promised subordinate head; renderer duplicates even and loses connector scope",
+        "attribution": "mixed",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h18",
+        "split": "holdout",
+        "phenomenon": "comparison",
+        "source": "This route is shorter than the highway, but it becomes dangerous when the temperature falls below zero."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "This route is shorter than the highway, but it becomes dangerous when the temperature falls below zero.",
+        "cnl": "ASSERT: This route is shorter than the highway but it becomes dangerous when the temperature falls below zero.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: This route is shorter than the highway but it becomes dangerous when the temperature falls below zero.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h19",
+        "split": "holdout",
+        "phenomenon": "gratitude and request",
+        "source": "Thank you! Could you leave the receipt on the kitchen table?"
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Thank you! Could you leave the receipt on the kitchen table?",
+        "cnl": "ASSERT: thank you.\nASK WHETHER: you could leave the receipt on the kitchen table.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: thank you.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 2,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: you could leave the receipt on the kitchen table.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Thank you treated as assertion; indirect polite request reduced to ability question",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h20",
+        "split": "holdout",
+        "phenomenon": "ellipsis",
+        "source": "Lena chose the blue jacket, and Omar the green one."
+      },
+      "output": {
+        "parser": "udpipe",
+        "lang": "en",
+        "source_text": "Lena chose the blue jacket, and Omar the green one.",
+        "cnl": "ASSERT: Lena chose the blue jacket and Omar the green one.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Lena chose the blue jacket and Omar the green one.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.venvs/
+__pycache__/
+*.pyc
+.pytest_cache/
+models/udpipe/*.udpipe
+models/udpipe/*.part
+models/trankit/
+models/stanza/
+.cache/
+artifacts/
+.venv/
+*.egg-info/
+build/
+dist/

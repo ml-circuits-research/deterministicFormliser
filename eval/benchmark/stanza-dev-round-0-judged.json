@@ -1,0 +1,2971 @@
+{
+  "parser": "stanza",
+  "split": "dev",
+  "round": 0,
+  "analysis_sha256": "53d857068d4aa234d7357717b9ed48715c8808a3eec9ad2acda6bf269e2ea476",
+  "renderer_sha256": "015d45e3bc18f3478c31db730d5b3c9e6a6ab5d897c33ab5718e84568c6b9bbd",
+  "rows": [
+    {
+      "case": {
+        "id": "d01",
+        "split": "dev",
+        "phenomenon": "assertion",
+        "source": "The nurse sent the revised schedule to the new receptionist yesterday."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The nurse sent the revised schedule to the new receptionist yesterday.",
+        "cnl": "ASSERT: The nurse sent the revised schedule to the new receptionist yesterday.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The nurse sent the revised schedule to the new receptionist yesterday.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d02",
+        "split": "dev",
+        "phenomenon": "negation",
+        "source": "The accountant did not send the invoice to the customer."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The accountant did not send the invoice to the customer.",
+        "cnl": "ASSERT: The accountant did not send the invoice to the customer.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The accountant did not send the invoice to the customer.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d03",
+        "split": "dev",
+        "phenomenon": "modality",
+        "source": "You must not restart the server before the backup finishes."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "You must not restart the server before the backup finishes.",
+        "cnl": "ASSERT: Before finishes, You must not restart the server.",
+        "coverage": 0.8,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Before finishes, You must not restart the server.",
+            "coverage": 0.8,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              10
+            ],
+            "unresolved": [
+              {
+                "id": 8,
+                "text": "the",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 9,
+                "text": "backup",
+                "deprel": "compound",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: the/det, backup/compound"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: the/det, backup/compound"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Subordinate subject lost",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d04",
+        "split": "dev",
+        "phenomenon": "modal ambiguity",
+        "source": "The technician may not be available tomorrow."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The technician may not be available tomorrow.",
+        "cnl": "ASSERT: The technician be The not available tomorrow.",
+        "coverage": 0.8571428571428571,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The technician be The not available tomorrow.",
+            "coverage": 0.8571428571428571,
+            "consumed_token_ids": [
+              1,
+              2,
+              4,
+              5,
+              6,
+              7
+            ],
+            "unresolved": [
+              {
+                "id": 3,
+                "text": "may",
+                "deprel": "aux",
+                "upos": "AUX"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: may/aux"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: may/aux"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Modality/negation/time corrupted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d05",
+        "split": "dev",
+        "phenomenon": "passive",
+        "source": "The damaged parcel was returned to the warehouse by the courier."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The damaged parcel was returned to the warehouse by the courier.",
+        "cnl": "ASSERT: The damaged parcel was returned to the warehouse by the courier.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The damaged parcel was returned to the warehouse by the courier.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d06",
+        "split": "dev",
+        "phenomenon": "copula",
+        "source": "The meeting room is not available on Friday."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The meeting room is not available on Friday.",
+        "cnl": "ASSERT: The meeting room is The meeting not available on Friday.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The meeting room is The meeting not available on Friday.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Subject material duplicated in predicate",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d07",
+        "split": "dev",
+        "phenomenon": "yes-no question",
+        "source": "Has the customer already paid the outstanding invoice?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Has the customer already paid the outstanding invoice?",
+        "cnl": "ASK WHETHER: the customer has paid the outstanding invoice already.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: the customer has paid the outstanding invoice already.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d08",
+        "split": "dev",
+        "phenomenon": "why question",
+        "source": "Why did the manager reject the proposal after the committee approved it?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Why did the manager reject the proposal after the committee approved it?",
+        "cnl": "ASK WHY: After the committee approved it, the manager did reject the proposal.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_WH",
+            "text": "ASK WHY: After the committee approved it, the manager did reject the proposal.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d09",
+        "split": "dev",
+        "phenomenon": "who subject question",
+        "source": "Who approved the changes to the delivery schedule?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Who approved the changes to the delivery schedule?",
+        "cnl": "ASK WHO: Who approved the changes to the delivery schedule.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_WH",
+            "text": "ASK WHO: Who approved the changes to the delivery schedule.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d10",
+        "split": "dev",
+        "phenomenon": "wh object question",
+        "source": "Which report did Maria send to the director?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Which report did Maria send to the director?",
+        "cnl": "ASK WHETHER: Maria did send Which report to the director.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: Maria did send Which report to the director.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "WH object question mislabeled as yes/no question",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d11",
+        "split": "dev",
+        "phenomenon": "how question",
+        "source": "How many tickets did the support team close yesterday?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "How many tickets did the support team close yesterday?",
+        "cnl": "ASK WHETHER: the support team did close How many tickets yesterday.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: the support team did close How many tickets yesterday.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Quantity question mislabeled or roles corrupted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d12",
+        "split": "dev",
+        "phenomenon": "embedded question",
+        "source": "I understand why the customer cancelled the order."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "I understand why the customer cancelled the order.",
+        "cnl": "ASSERT: I understand why the customer cancelled the order.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: I understand why the customer cancelled the order.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d13",
+        "split": "dev",
+        "phenomenon": "indirect question",
+        "source": "The manager asked whether the supplier could deliver the parts before Monday."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The manager asked whether the supplier could deliver the parts before Monday.",
+        "cnl": "ASSERT: The manager asked whether the supplier could deliver the parts before Monday.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The manager asked whether the supplier could deliver the parts before Monday.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d14",
+        "split": "dev",
+        "phenomenon": "imperative",
+        "source": "Please send the revised contract to Elena before noon."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Please send the revised contract to Elena before noon.",
+        "cnl": "COMMAND: Send the revised contract to Elena before noon.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "COMMAND",
+            "text": "COMMAND: Send the revised contract to Elena before noon.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Explicit politeness marker omitted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d15",
+        "split": "dev",
+        "phenomenon": "negative imperative",
+        "source": "Do not open the attachment unless you recognize the sender."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Do not open the attachment unless you recognize the sender.",
+        "cnl": "ASSERT: Unless you recognize the sender, do not open the attachment.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Unless you recognize the sender, do not open the attachment.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Negative imperative mislabeled assertion",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d16",
+        "split": "dev",
+        "phenomenon": "polite request",
+        "source": "Could you please close the window?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Could you please close the window?",
+        "cnl": "ASK WHETHER: you could close the window.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: you could close the window.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              4,
+              5,
+              6
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Polite request reduced to ability question; please omitted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d17",
+        "split": "dev",
+        "phenomenon": "condition",
+        "source": "If the supplier confirms the price today, we will place the order tomorrow."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "If the supplier confirms the price today, we will place the order tomorrow.",
+        "cnl": "ASSERT: If the supplier confirms the price today, we will place the order tomorrow.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: If the supplier confirms the price today, we will place the order tomorrow.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d18",
+        "split": "dev",
+        "phenomenon": "unless",
+        "source": "Unless the supervisor approves the request, the team will not deploy the update."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Unless the supervisor approves the request, the team will not deploy the update.",
+        "cnl": "ASSERT: Unless the supervisor approves the request, the team will not deploy the update.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Unless the supervisor approves the request, the team will not deploy the update.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d19",
+        "split": "dev",
+        "phenomenon": "cause",
+        "source": "The driver stopped because a child was crossing the road."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The driver stopped because a child was crossing the road.",
+        "cnl": "ASSERT: Because a child was crossing the road, The driver stopped.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Because a child was crossing the road, The driver stopped.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d20",
+        "split": "dev",
+        "phenomenon": "temporal once",
+        "source": "The team started the migration once the administrator had verified the backup."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The team started the migration once the administrator had verified the backup.",
+        "cnl": "ASSERT: Once the administrator had verified the backup, The team started the migration.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Once the administrator had verified the backup, The team started the migration.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d21",
+        "split": "dev",
+        "phenomenon": "concession",
+        "source": "Although the restaurant was crowded, the waiter found us a quiet table."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Although the restaurant was crowded, the waiter found us a quiet table.",
+        "cnl": "ASSERT: Although the restaurant was crowded, the waiter found us a quiet table.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Although the restaurant was crowded, the waiter found us a quiet table.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d22",
+        "split": "dev",
+        "phenomenon": "subject control",
+        "source": "The customer wants to cancel the subscription before it renews."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The customer wants to cancel the subscription before it renews.",
+        "cnl": "ASSERT: The customer wants to Before it renews, cancel the subscription.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The customer wants to Before it renews, cancel the subscription.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Temporal clause inserted inside infinitive",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d23",
+        "split": "dev",
+        "phenomenon": "object control",
+        "source": "The teacher persuaded the student to submit the assignment on time."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The teacher persuaded the student to submit the assignment on time.",
+        "cnl": "ASSERT: The teacher persuaded the student to submit the assignment on time.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The teacher persuaded the student to submit the assignment on time.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d24",
+        "split": "dev",
+        "phenomenon": "raising",
+        "source": "The new security policy seems to have reduced the number of incidents."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The new security policy seems to have reduced the number of incidents.",
+        "cnl": "ASSERT: The new security policy seems to have reduced the number of incidents.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The new security policy seems to have reduced the number of incidents.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d25",
+        "split": "dev",
+        "phenomenon": "verbal coordination",
+        "source": "The editor reviewed and approved the final draft."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The editor reviewed and approved the final draft.",
+        "cnl": "ASSERT: The editor reviewed and The editor approved the final draft.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The editor reviewed and The editor approved the final draft.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Expanded coordination no longer preserves shared-object reading",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d26",
+        "split": "dev",
+        "phenomenon": "shared auxiliary",
+        "source": "The technician has inspected and repaired the faulty pump."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The technician has inspected and repaired the faulty pump.",
+        "cnl": "ASSERT: The technician has inspected and The technician repaired the faulty pump.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The technician has inspected and The technician repaired the faulty pump.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Shared perfect auxiliary/object lost in second conjunct",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d27",
+        "split": "dev",
+        "phenomenon": "negative coordination",
+        "source": "The tenant did not sign or return the agreement."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The tenant did not sign or return the agreement.",
+        "cnl": "ASSERT: either The tenant did not sign the agreement or The tenant return.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: either The tenant did not sign the agreement or The tenant return.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Negation scope broken by either/or expansion",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d28",
+        "split": "dev",
+        "phenomenon": "relative clause",
+        "source": "The engineer who inspected the bridge recommended an immediate closure."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The engineer who inspected the bridge recommended an immediate closure.",
+        "cnl": "ASSERT: The engineer recommended an immediate closure.",
+        "coverage": 0.6,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The engineer recommended an immediate closure.",
+            "coverage": 0.6,
+            "consumed_token_ids": [
+              1,
+              2,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [
+              {
+                "id": 3,
+                "text": "who",
+                "deprel": "nsubj",
+                "upos": "PRON"
+              },
+              {
+                "id": 4,
+                "text": "inspected",
+                "deprel": "acl:relcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 5,
+                "text": "the",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 6,
+                "text": "bridge",
+                "deprel": "obj",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: who/nsubj, inspected/acl:relcl, the/det, bridge/obj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: who/nsubj, inspected/acl:relcl, the/det, bridge/obj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Restrictive relative clause omitted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d29",
+        "split": "dev",
+        "phenomenon": "nonrestrictive relative",
+        "source": "My brother, who lives in Rome, will visit us next week."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "My brother, who lives in Rome, will visit us next week.",
+        "cnl": "ASSERT: My brother will visit us next week.",
+        "coverage": 0.6363636363636364,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: My brother will visit us next week.",
+            "coverage": 0.6363636363636364,
+            "consumed_token_ids": [
+              1,
+              2,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [
+              {
+                "id": 4,
+                "text": "who",
+                "deprel": "nsubj",
+                "upos": "PRON"
+              },
+              {
+                "id": 5,
+                "text": "lives",
+                "deprel": "acl:relcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 6,
+                "text": "in",
+                "deprel": "case",
+                "upos": "ADP"
+              },
+              {
+                "id": 7,
+                "text": "Rome",
+                "deprel": "obl",
+                "upos": "PROPN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: who/nsubj, lives/acl:relcl, in/case, Rome/obl"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: who/nsubj, lives/acl:relcl, in/case, Rome/obl"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Relative clause omitted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d30",
+        "split": "dev",
+        "phenomenon": "quantifier negation",
+        "source": "Not every applicant passed the final interview."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Not every applicant passed the final interview.",
+        "cnl": "ASSERT: Not every applicant passed the final interview.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Not every applicant passed the final interview.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d31",
+        "split": "dev",
+        "phenomenon": "negative quantifier",
+        "source": "No employee may share a customer's password with anyone."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "No employee may share a customer's password with anyone.",
+        "cnl": "ASSERT: No employee may share a customer 's password with anyone.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: No employee may share a customer 's password with anyone.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d32",
+        "split": "dev",
+        "phenomenon": "focus",
+        "source": "Only the supervisor can authorize a refund above fifty euros."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Only the supervisor can authorize a refund above fifty euros.",
+        "cnl": "ASSERT: Only the supervisor can authorize a refund above fifty euros.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Only the supervisor can authorize a refund above fifty euros.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d33",
+        "split": "dev",
+        "phenomenon": "comparison",
+        "source": "The replacement battery lasts longer than the original battery."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The replacement battery lasts longer than the original battery.",
+        "cnl": "ASSERT: The replacement battery lasts longer than the original battery.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The replacement battery lasts longer than the original battery.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d34",
+        "split": "dev",
+        "phenomenon": "existential",
+        "source": "There are three unread messages in the shared inbox."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "There are three unread messages in the shared inbox.",
+        "cnl": "ASSERT: three unread messages in the shared inbox are.",
+        "coverage": 0.8888888888888888,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: three unread messages in the shared inbox are.",
+            "coverage": 0.8888888888888888,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "There",
+                "deprel": "expl",
+                "upos": "PRON"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: There/expl"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: There/expl"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Existential construction malformed",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d35",
+        "split": "dev",
+        "phenomenon": "expletive",
+        "source": "It is important to check the address before sending the parcel."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "It is important to check the address before sending the parcel.",
+        "cnl": "ASSERT: check the address is important the.",
+        "coverage": 0.45454545454545453,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: check the address is important the.",
+            "coverage": 0.45454545454545453,
+            "consumed_token_ids": [
+              2,
+              3,
+              5,
+              6,
+              7
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "It",
+                "deprel": "expl",
+                "upos": "PRON"
+              },
+              {
+                "id": 4,
+                "text": "to",
+                "deprel": "mark",
+                "upos": "PART"
+              },
+              {
+                "id": 8,
+                "text": "before",
+                "deprel": "mark",
+                "upos": "SCONJ"
+              },
+              {
+                "id": 9,
+                "text": "sending",
+                "deprel": "advcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 10,
+                "text": "the",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 11,
+                "text": "parcel",
+                "deprel": "obj",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: It/expl, to/mark, before/mark, sending/advcl, the/det, parcel/obj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: It/expl, to/mark, before/mark, sending/advcl, the/det, parcel/obj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Clausal subject and predicate malformed",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d36",
+        "split": "dev",
+        "phenomenon": "interjection plus assertion",
+        "source": "Well, I did not expect the repair to cost so much!"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Well, I did not expect the repair to cost so much!",
+        "cnl": "ASSERT: I did not expect the repair to cost so much.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: I did not expect the repair to cost so much.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Explicit discourse/exclamatory material omitted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d37",
+        "split": "dev",
+        "phenomenon": "interjection",
+        "source": "Ouch!"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Ouch!",
+        "cnl": "ASSERT: ouch.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: ouch.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Interjection mislabeled assertion",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d38",
+        "split": "dev",
+        "phenomenon": "greeting",
+        "source": "Hello, Maria!"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Hello, Maria!",
+        "cnl": "ASSERT: hello.",
+        "coverage": 0.5,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: hello.",
+            "coverage": 0.5,
+            "consumed_token_ids": [
+              1
+            ],
+            "unresolved": [
+              {
+                "id": 3,
+                "text": "Maria",
+                "deprel": "vocative",
+                "upos": "PROPN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: Maria/vocative"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: Maria/vocative"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Greeting mislabeled assertion and/or addressee lost",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d39",
+        "split": "dev",
+        "phenomenon": "gratitude",
+        "source": "Thanks for your help!"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Thanks for your help!",
+        "cnl": "ASSERT: thanks for your help.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: thanks for your help.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Thanks mislabeled assertion",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d40",
+        "split": "dev",
+        "phenomenon": "exclamation",
+        "source": "What a wonderful surprise!"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "What a wonderful surprise!",
+        "cnl": "ASK WHAT: surprise.",
+        "coverage": 0.25,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_WH",
+            "text": "ASK WHAT: surprise.",
+            "coverage": 0.25,
+            "consumed_token_ids": [
+              4
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "What",
+                "deprel": "det:predet",
+                "upos": "DET"
+              },
+              {
+                "id": 2,
+                "text": "a",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 3,
+                "text": "wonderful",
+                "deprel": "amod",
+                "upos": "ADJ"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: What/det:predet, a/det, wonderful/amod"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: What/det:predet, a/det, wonderful/amod"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Exclamation mislabeled question",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d41",
+        "split": "dev",
+        "phenomenon": "vocative request",
+        "source": "Alex, please call the doctor and tell her about the new symptoms."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Alex, please call the doctor and tell her about the new symptoms.",
+        "cnl": "ASSERT: Alex call the doctor and Alex tell her about the new symptoms.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Alex call the doctor and Alex tell her about the new symptoms.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Addressee/politeness lost or wrong speech act",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d42",
+        "split": "dev",
+        "phenomenon": "direct quotation",
+        "source": "Maria said, \"Do not delete the file.\""
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Maria said, \"Do not delete the file.\"",
+        "cnl": "ASSERT: Maria said do not delete the file.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Maria said do not delete the file.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Quotation boundaries and embedded command attribution lost",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d43",
+        "split": "dev",
+        "phenomenon": "reported speech",
+        "source": "The witness said that she had never seen the suspect before."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The witness said that she had never seen the suspect before.",
+        "cnl": "ASSERT: The witness said that she had never seen the suspect before.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The witness said that she had never seen the suspect before.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d44",
+        "split": "dev",
+        "phenomenon": "tag question",
+        "source": "You have received the package, haven't you?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "You have received the package, haven't you?",
+        "cnl": "ASK WHETHER: You have received the package.",
+        "coverage": 0.625,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: You have received the package.",
+            "coverage": 0.625,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "unresolved": [
+              {
+                "id": 7,
+                "text": "have",
+                "deprel": "parataxis",
+                "upos": "AUX"
+              },
+              {
+                "id": 8,
+                "text": "n't",
+                "deprel": "advmod",
+                "upos": "PART"
+              },
+              {
+                "id": 9,
+                "text": "you",
+                "deprel": "nsubj",
+                "upos": "PRON"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: have/parataxis, n't/advmod, you/nsubj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: have/parataxis, n't/advmod, you/nsubj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Question tag and expectation polarity not preserved",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d45",
+        "split": "dev",
+        "phenomenon": "alternative question",
+        "source": "Would you prefer tea or coffee?"
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Would you prefer tea or coffee?",
+        "cnl": "ASK WHETHER: you would prefer tea or coffee.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: you would prefer tea or coffee.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Alternative question represented as yes/no question",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d46",
+        "split": "dev",
+        "phenomenon": "fragment",
+        "source": "Two coffees, please."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Two coffees, please.",
+        "cnl": "ASSERT: coffees.",
+        "coverage": 0.5,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: coffees.",
+            "coverage": 0.5,
+            "consumed_token_ids": [
+              2
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "Two",
+                "deprel": "nummod",
+                "upos": "NUM"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: Two/nummod"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: Two/nummod"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Request fragment mislabeled assertion or content lost",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d47",
+        "split": "dev",
+        "phenomenon": "ellipsis",
+        "source": "Anna ordered pasta, and Ben a salad."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Anna ordered pasta, and Ben a salad.",
+        "cnl": "ASSERT: Anna ordered pasta.",
+        "coverage": 0.42857142857142855,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Anna ordered pasta.",
+            "coverage": 0.42857142857142855,
+            "consumed_token_ids": [
+              1,
+              2,
+              3
+            ],
+            "unresolved": [
+              {
+                "id": 5,
+                "text": "and",
+                "deprel": "cc",
+                "upos": "CCONJ"
+              },
+              {
+                "id": 6,
+                "text": "Ben",
+                "deprel": "nsubj",
+                "upos": "PROPN"
+              },
+              {
+                "id": 7,
+                "text": "a",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 8,
+                "text": "salad",
+                "deprel": "conj",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: and/cc, Ben/nsubj, a/det, salad/conj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: and/cc, Ben/nsubj, a/det, salad/conj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Elliptical second proposition lost/corrupted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d48",
+        "split": "dev",
+        "phenomenon": "contractions",
+        "source": "I can't find the document that you sent me yesterday."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "I can't find the document that you sent me yesterday.",
+        "cnl": "ASSERT: I ca n't find the document.",
+        "coverage": 0.5454545454545454,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: I ca n't find the document.",
+            "coverage": 0.5454545454545454,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "unresolved": [
+              {
+                "id": 7,
+                "text": "that",
+                "deprel": "obl",
+                "upos": "PRON"
+              },
+              {
+                "id": 8,
+                "text": "you",
+                "deprel": "nsubj",
+                "upos": "PRON"
+              },
+              {
+                "id": 9,
+                "text": "sent",
+                "deprel": "acl:relcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 10,
+                "text": "me",
+                "deprel": "iobj",
+                "upos": "PRON"
+              },
+              {
+                "id": 11,
+                "text": "yesterday",
+                "deprel": "obl:unmarked",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: that/obl, you/nsubj, sent/acl:relcl, me/iobj, yesterday/obl:unmarked"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: that/obl, you/nsubj, sent/acl:relcl, me/iobj, yesterday/obl:unmarked"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Relative clause omitted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d49",
+        "split": "dev",
+        "phenomenon": "counterfactual",
+        "source": "If I had known about the delay, I would have taken an earlier train."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "If I had known about the delay, I would have taken an earlier train.",
+        "cnl": "ASSERT: If I had known about the delay, I would have taken an earlier train.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: If I had known about the delay, I would have taken an earlier train.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d50",
+        "split": "dev",
+        "phenomenon": "nested conditions",
+        "source": "If the payment arrives before Friday and the documents are complete, we can release the shipment unless customs requests another inspection."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "If the payment arrives before Friday and the documents are complete, we can release the shipment unless customs requests another inspection.",
+        "cnl": "ASSERT: Unless customs requests another inspection, If the payment arrives before Friday and the documents are and the complete, we can release the shipment.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Unless customs requests another inspection, If the payment arrives before Friday and the documents are and the complete, we can release the shipment.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Multiple clause scopes rearranged or predicate duplicated",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d51",
+        "split": "dev",
+        "phenomenon": "multiple subordinate clauses",
+        "source": "Although the analyst was tired, she checked the figures again because the director had warned her that the earlier report contained several errors."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Although the analyst was tired, she checked the figures again because the director had warned her that the earlier report contained several errors.",
+        "cnl": "ASSERT: Because the director had warned her that the earlier report contained several errors, Although the analyst was the tired, she checked the figures again.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Because the director had warned her that the earlier report contained several errors, Although the analyst was the tired, she checked the figures again.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Multiple subordinate relations rearranged or content lost",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d52",
+        "split": "dev",
+        "phenomenon": "long relative and passive",
+        "source": "The contract that the lawyer revised after the meeting was signed by both partners before the office closed."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The contract that the lawyer revised after the meeting was signed by both partners before the office closed.",
+        "cnl": "ASSERT: contract.",
+        "coverage": 0.05555555555555555,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: contract.",
+            "coverage": 0.05555555555555555,
+            "consumed_token_ids": [
+              2
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "The",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 3,
+                "text": "that",
+                "deprel": "obj",
+                "upos": "PRON"
+              },
+              {
+                "id": 4,
+                "text": "the",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 5,
+                "text": "lawyer",
+                "deprel": "nsubj",
+                "upos": "NOUN"
+              },
+              {
+                "id": 6,
+                "text": "revised",
+                "deprel": "acl:relcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 7,
+                "text": "after",
+                "deprel": "mark",
+                "upos": "SCONJ"
+              },
+              {
+                "id": 8,
+                "text": "the",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 9,
+                "text": "meeting",
+                "deprel": "nsubj:pass",
+                "upos": "NOUN"
+              },
+              {
+                "id": 10,
+                "text": "was",
+                "deprel": "aux:pass",
+                "upos": "AUX"
+              },
+              {
+                "id": 11,
+                "text": "signed",
+                "deprel": "advcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 12,
+                "text": "by",
+                "deprel": "case",
+                "upos": "ADP"
+              },
+              {
+                "id": 13,
+                "text": "both",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 14,
+                "text": "partners",
+                "deprel": "obl:agent",
+                "upos": "NOUN"
+              },
+              {
+                "id": 15,
+                "text": "before",
+                "deprel": "mark",
+                "upos": "SCONJ"
+              },
+              {
+                "id": 16,
+                "text": "the",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 17,
+                "text": "office",
+                "deprel": "nsubj",
+                "upos": "NOUN"
+              },
+              {
+                "id": 18,
+                "text": "closed",
+                "deprel": "advcl",
+                "upos": "VERB"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: The/det, that/obj, the/det, lawyer/nsubj, revised/acl:relcl, after/mark, the/det, meeting/nsubj:pass, was/aux:pass, signed/advcl, by/case, both/det, partners/obl:agent, before/mark, the/det, office/nsubj, closed/advcl"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: The/det, that/obj, the/det, lawyer/nsubj, revised/acl:relcl, after/mark, the/det, meeting/nsubj:pass, was/aux:pass, signed/advcl, by/case, both/det, partners/obl:agent, before/mark, the/det, office/nsubj, closed/advcl"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Main proposition/relative clause lost",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d53",
+        "split": "dev",
+        "phenomenon": "multiple speech acts",
+        "source": "Oh no! Did you save the file? Please check the backup before you restart the computer."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Oh no! Did you save the file? Please check the backup before you restart the computer.",
+        "cnl": "ASSERT: no.\nASK WHETHER: you did save the file.\nCOMMAND: Before you restart the computer, check the backup.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: no.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              2
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 2,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: you did save the file.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 3,
+            "speech_act": "COMMAND",
+            "text": "COMMAND: Before you restart the computer, check the backup.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Interjection lost or mislabeled, politeness dropped",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d54",
+        "split": "dev",
+        "phenomenon": "dialogue-like mixture",
+        "source": "Yes, the payment arrived. However, the order is still on hold because the delivery address is incomplete."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Yes, the payment arrived. However, the order is still on hold because the delivery address is incomplete.",
+        "cnl": "ASSERT: the payment arrived.\nASSERT: Because the delivery address is the delivery incomplete, the order is However the still on hold.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: the payment arrived.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              3,
+              4,
+              5
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 2,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Because the delivery address is the delivery incomplete, the order is However the still on hold.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Confirmation/discourse material omitted or corrupted",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d55",
+        "split": "dev",
+        "phenomenon": "coordination contrast",
+        "source": "The medicine reduced the pain, but it did not lower the fever."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The medicine reduced the pain, but it did not lower the fever.",
+        "cnl": "ASSERT: The medicine reduced the pain but it did not lower the fever.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The medicine reduced the pain but it did not lower the fever.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d56",
+        "split": "dev",
+        "phenomenon": "neither nor",
+        "source": "Neither the manager nor the assistant knew where the keys were."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Neither the manager nor the assistant knew where the keys were.",
+        "cnl": "ASK WHERE: the manager nor the assistant knew where the.",
+        "coverage": 0.7272727272727273,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_WH",
+            "text": "ASK WHERE: the manager nor the assistant knew where the.",
+            "coverage": 0.7272727272727273,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "Neither",
+                "deprel": "cc",
+                "upos": "CCONJ"
+              },
+              {
+                "id": 10,
+                "text": "keys",
+                "deprel": "nsubj",
+                "upos": "NOUN"
+              },
+              {
+                "id": 11,
+                "text": "were",
+                "deprel": "cop",
+                "upos": "AUX"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: Neither/cc, keys/nsubj, were/cop"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: Neither/cc, keys/nsubj, were/cop"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Neither lost and/or embedded question mislabeled",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d57",
+        "split": "dev",
+        "phenomenon": "time and number",
+        "source": "The train leaves at 6:30, and the journey takes approximately two hours."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "The train leaves at 6:30, and the journey takes approximately two hours.",
+        "cnl": "ASSERT: The train leaves at 6:30 and the journey takes approximately two hours.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The train leaves at 6:30 and the journey takes approximately two hours.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech act preserved; minor surface differences acceptable",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d58",
+        "split": "dev",
+        "phenomenon": "phrasal verb",
+        "source": "Please turn off the lights and lock the door when you leave."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "Please turn off the lights and lock the door when you leave.",
+        "cnl": "COMMAND: Turn off the lights and When you leave, lock the door.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "COMMAND",
+            "text": "COMMAND: Turn off the lights and When you leave, lock the door.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Politeness lost; clause inserted inside coordination",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d59",
+        "split": "dev",
+        "phenomenon": "wish",
+        "source": "I wish the bus would arrive before the rain starts."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "I wish the bus would arrive before the rain starts.",
+        "cnl": "ASSERT: I wish Before the rain starts, the bus would arrive.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: I wish Before the rain starts, the bus would arrive.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Embedded clause reordered into broken construction",
+        "judge": "assistant qualitative review"
+      }
+    },
+    {
+      "case": {
+        "id": "d60",
+        "split": "dev",
+        "phenomenon": "disjunction scope",
+        "source": "You can pay by card or request an invoice, but you cannot use both options for the same order."
+      },
+      "output": {
+        "parser": "stanza",
+        "lang": "en",
+        "source_text": "You can pay by card or request an invoice, but you cannot use both options for the same order.",
+        "cnl": "ASSERT: either You can pay by card or You request an invoice but you can not use both options for the same order.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: either You can pay by card or You request an invoice but you can not use both options for the same order.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Shared modal/coordination scope not preserved",
+        "judge": "assistant qualitative review"
+      }
+    }
+  ]
+}

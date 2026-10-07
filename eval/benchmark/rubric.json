@@ -1,0 +1,9 @@
+{
+ "judge":"Assistant qualitative review of each NL/CNL pair; not an independent human or automatic semantic oracle",
+ "unit":"One complete input case; all sentences and speech acts must succeed",
+ "success":"CNL is intelligible and preserves participants, predicate, negation, modality, quantifier and coordination scope, conditions, time, relative clauses, quoted attribution, speech act and explicit pragmatic material (including please, greetings and interjections). Minor capitalization or contractions alone do not fail.",
+ "failure":"Any material omission, addition, scope change, wrong speech act, unintelligible construction or runtime error",
+ "uncertain":"Ambiguity or insufficiently reliable reconstruction; counted as non-success in the reported conservative rate",
+ "rate":"success / all cases in the split, including runtime failures",
+ "limitations":["Authored realistic English examples, not sampled production data", "Development cases are inspected during tuning", "20 holdout cases are rendered and judged only after five rounds", "Same assistant authored, repaired and judged; scores are estimates with evaluator bias", "Coverage is reported separately and never used as the semantic verdict", "Parser attribution is based on inspected dependency structures, not proof of causal exclusivity"]
+}

@@ -1,0 +1,5688 @@
+[
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John sent the report to Mary.",
+    "sentences": [
+      {
+        "id": 1,
+        "text": "John sent the report to Mary.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 0,
+            "end": 4,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "sent",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 5,
+            "end": 9,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 4,
+            "deprel": "det",
+            "start": 10,
+            "end": 13,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "dobj",
+            "start": 14,
+            "end": 20,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "to",
+            "lemma": "to",
+            "upos": "ADP",
+            "xpos": "IN",
+            "feats": {},
+            "head": 2,
+            "deprel": "dative",
+            "start": 21,
+            "end": 23,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "pobj",
+            "start": 24,
+            "end": 28,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 28,
+            "end": 29,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 29,
+            "end": 31,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "assertion"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John did not send the report.",
+    "sentences": [
+      {
+        "id": 2,
+        "text": "John did not send the report.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": 31,
+            "end": 35,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": 36,
+            "end": 39,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 4,
+            "deprel": "neg",
+            "start": 40,
+            "end": 43,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 44,
+            "end": 48,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": 49,
+            "end": 52,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 53,
+            "end": 59,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 4,
+            "deprel": "punct",
+            "start": 59,
+            "end": 60,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 60,
+            "end": 62,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "negation"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Alice may not approve the proposal.",
+    "sentences": [
+      {
+        "id": 3,
+        "text": "Alice may not approve the proposal.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": 62,
+            "end": 67,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "may",
+            "lemma": "may",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": 68,
+            "end": 71,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 4,
+            "deprel": "neg",
+            "start": 72,
+            "end": 75,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "approve",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 76,
+            "end": 83,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": 84,
+            "end": 87,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "proposal",
+            "lemma": "proposal",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 88,
+            "end": 96,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 4,
+            "deprel": "punct",
+            "start": 96,
+            "end": 97,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 97,
+            "end": 99,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "modal_negation"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Alice must not open the door.",
+    "sentences": [
+      {
+        "id": 4,
+        "text": "Alice must not open the door.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": 99,
+            "end": 104,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "must",
+            "lemma": "must",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": 105,
+            "end": 109,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 4,
+            "deprel": "neg",
+            "start": 110,
+            "end": 113,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "open",
+            "lemma": "open",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 114,
+            "end": 118,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": 119,
+            "end": 122,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "door",
+            "lemma": "door",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 123,
+            "end": 127,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 4,
+            "deprel": "punct",
+            "start": 127,
+            "end": 128,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 128,
+            "end": 130,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "prohibition"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "The report was approved by Mary.",
+    "sentences": [
+      {
+        "id": 5,
+        "text": "The report was approved by Mary.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 2,
+            "deprel": "det",
+            "start": 130,
+            "end": 133,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubjpass",
+            "start": 134,
+            "end": 140,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "was",
+            "lemma": "be",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "auxpass",
+            "start": 141,
+            "end": 144,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "approved",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBN",
+            "feats": {
+              "Aspect": "Perf",
+              "Tense": "Past",
+              "VerbForm": "Part"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 145,
+            "end": 153,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "by",
+            "lemma": "by",
+            "upos": "ADP",
+            "xpos": "IN",
+            "feats": {},
+            "head": 4,
+            "deprel": "agent",
+            "start": 154,
+            "end": 156,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "pobj",
+            "start": 157,
+            "end": 161,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 4,
+            "deprel": "punct",
+            "start": 161,
+            "end": 162,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 162,
+            "end": 164,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "passive"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John is not tired.",
+    "sentences": [
+      {
+        "id": 6,
+        "text": "John is not tired.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 164,
+            "end": 168,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "is",
+            "lemma": "be",
+            "upos": "AUX",
+            "xpos": "VBZ",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 169,
+            "end": 171,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 2,
+            "deprel": "neg",
+            "start": 172,
+            "end": 175,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "tired",
+            "lemma": "tired",
+            "upos": "ADJ",
+            "xpos": "JJ",
+            "feats": {
+              "Degree": "Pos"
+            },
+            "head": 2,
+            "deprel": "acomp",
+            "start": 176,
+            "end": 181,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 181,
+            "end": 182,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 5,
+            "deprel": "dep",
+            "start": 182,
+            "end": 184,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "copular_negation"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Did Alice approve the proposal?",
+    "sentences": [
+      {
+        "id": 7,
+        "text": "Did Alice approve the proposal?\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 3,
+            "deprel": "aux",
+            "start": 184,
+            "end": 187,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": 188,
+            "end": 193,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "approve",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 194,
+            "end": 201,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 5,
+            "deprel": "det",
+            "start": 202,
+            "end": 205,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "proposal",
+            "lemma": "proposal",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "dobj",
+            "start": 206,
+            "end": 214,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "?",
+            "lemma": "?",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 3,
+            "deprel": "punct",
+            "start": 214,
+            "end": 215,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 215,
+            "end": 217,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "yes_no_question"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Why did Alice reject it?",
+    "sentences": [
+      {
+        "id": 8,
+        "text": "Why did Alice reject it?\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Why",
+            "lemma": "why",
+            "upos": "SCONJ",
+            "xpos": "WRB",
+            "feats": {},
+            "head": 4,
+            "deprel": "advmod",
+            "start": 217,
+            "end": 220,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": 221,
+            "end": 224,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": 225,
+            "end": 230,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "reject",
+            "lemma": "reject",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 231,
+            "end": 237,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 238,
+            "end": 240,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "?",
+            "lemma": "?",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 4,
+            "deprel": "punct",
+            "start": 240,
+            "end": 241,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 241,
+            "end": 243,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "why_question"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "I know why John left.",
+    "sentences": [
+      {
+        "id": 9,
+        "text": "I know why John left.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "I",
+            "lemma": "I",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Nom",
+              "Number": "Sing",
+              "Person": "1",
+              "PronType": "Prs"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 243,
+            "end": 244,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "know",
+            "lemma": "know",
+            "upos": "VERB",
+            "xpos": "VBP",
+            "feats": {
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 245,
+            "end": 249,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "why",
+            "lemma": "why",
+            "upos": "SCONJ",
+            "xpos": "WRB",
+            "feats": {},
+            "head": 5,
+            "deprel": "advmod",
+            "start": 250,
+            "end": 253,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "nsubj",
+            "start": 254,
+            "end": 258,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "left",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "ccomp",
+            "start": 259,
+            "end": 263,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 263,
+            "end": 264,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 264,
+            "end": 266,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "embedded_question"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Send the report to Mary.",
+    "sentences": [
+      {
+        "id": 10,
+        "text": "Send the report to Mary.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 266,
+            "end": 270,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 3,
+            "deprel": "det",
+            "start": 271,
+            "end": 274,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 1,
+            "deprel": "dobj",
+            "start": 275,
+            "end": 281,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "to",
+            "lemma": "to",
+            "upos": "ADP",
+            "xpos": "IN",
+            "feats": {},
+            "head": 1,
+            "deprel": "prep",
+            "start": 282,
+            "end": 284,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "pobj",
+            "start": 285,
+            "end": 289,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 1,
+            "deprel": "punct",
+            "start": 289,
+            "end": 290,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 290,
+            "end": 292,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "imperative"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "If Alice approves the proposal, Bob will deploy it.",
+    "sentences": [
+      {
+        "id": 11,
+        "text": "If Alice approves the proposal, Bob will deploy it.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "If",
+            "lemma": "if",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 3,
+            "deprel": "mark",
+            "start": 292,
+            "end": 294,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": 295,
+            "end": 300,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "approves",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBZ",
+            "feats": {
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "advcl",
+            "start": 301,
+            "end": 309,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 5,
+            "deprel": "det",
+            "start": 310,
+            "end": 313,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "proposal",
+            "lemma": "proposal",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "dobj",
+            "start": 314,
+            "end": 322,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "xpos": ",",
+            "feats": {
+              "PunctType": "Comm"
+            },
+            "head": 9,
+            "deprel": "punct",
+            "start": 322,
+            "end": 323,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "Bob",
+            "lemma": "Bob",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 9,
+            "deprel": "nsubj",
+            "start": 324,
+            "end": 327,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "will",
+            "lemma": "will",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "aux",
+            "start": 328,
+            "end": 332,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "deploy",
+            "lemma": "deploy",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 333,
+            "end": 339,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 9,
+            "deprel": "dobj",
+            "start": 340,
+            "end": 342,
+            "misc": {}
+          },
+          {
+            "id": 11,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 9,
+            "deprel": "punct",
+            "start": 342,
+            "end": 343,
+            "misc": {}
+          },
+          {
+            "id": 12,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 11,
+            "deprel": "dep",
+            "start": 343,
+            "end": 345,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "condition"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Unless Mary approves the report, John will not send it.",
+    "sentences": [
+      {
+        "id": 12,
+        "text": "Unless Mary approves the report, John will not send it.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Unless",
+            "lemma": "unless",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 3,
+            "deprel": "mark",
+            "start": 345,
+            "end": 351,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": 352,
+            "end": 356,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "approves",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBZ",
+            "feats": {
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 10,
+            "deprel": "advcl",
+            "start": 357,
+            "end": 365,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 5,
+            "deprel": "det",
+            "start": 366,
+            "end": 369,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "dobj",
+            "start": 370,
+            "end": 376,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "xpos": ",",
+            "feats": {
+              "PunctType": "Comm"
+            },
+            "head": 10,
+            "deprel": "punct",
+            "start": 376,
+            "end": 377,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 10,
+            "deprel": "nsubj",
+            "start": 378,
+            "end": 382,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "will",
+            "lemma": "will",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 10,
+            "deprel": "aux",
+            "start": 383,
+            "end": 387,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 10,
+            "deprel": "neg",
+            "start": 388,
+            "end": 391,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": "send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 392,
+            "end": 396,
+            "misc": {}
+          },
+          {
+            "id": 11,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 10,
+            "deprel": "dobj",
+            "start": 397,
+            "end": 399,
+            "misc": {}
+          },
+          {
+            "id": 12,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 10,
+            "deprel": "punct",
+            "start": 399,
+            "end": 400,
+            "misc": {}
+          },
+          {
+            "id": 13,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 12,
+            "deprel": "dep",
+            "start": 400,
+            "end": 402,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "unless"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John left because Mary arrived.",
+    "sentences": [
+      {
+        "id": 13,
+        "text": "John left because Mary arrived.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 402,
+            "end": 406,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "left",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 407,
+            "end": 411,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "because",
+            "lemma": "because",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 5,
+            "deprel": "mark",
+            "start": 412,
+            "end": 419,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "nsubj",
+            "start": 420,
+            "end": 424,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "arrived",
+            "lemma": "arrive",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "advcl",
+            "start": 425,
+            "end": 432,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 432,
+            "end": 433,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 433,
+            "end": 435,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "cause"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John left once Mary arrived.",
+    "sentences": [
+      {
+        "id": 14,
+        "text": "John left once Mary arrived.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 435,
+            "end": 439,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "left",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 440,
+            "end": 444,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "once",
+            "lemma": "once",
+            "upos": "ADV",
+            "xpos": "RB",
+            "feats": {
+              "NumType": "Mult"
+            },
+            "head": 5,
+            "deprel": "advmod",
+            "start": 445,
+            "end": 449,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "nsubj",
+            "start": 450,
+            "end": 454,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "arrived",
+            "lemma": "arrive",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "advcl",
+            "start": 455,
+            "end": 462,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 462,
+            "end": 463,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 463,
+            "end": 465,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "temporal_once"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John wants to leave.",
+    "sentences": [
+      {
+        "id": 15,
+        "text": "John wants to leave.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 465,
+            "end": 469,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "wants",
+            "lemma": "want",
+            "upos": "VERB",
+            "xpos": "VBZ",
+            "feats": {
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 470,
+            "end": 475,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "to",
+            "lemma": "to",
+            "upos": "PART",
+            "xpos": "TO",
+            "feats": {},
+            "head": 4,
+            "deprel": "aux",
+            "start": 476,
+            "end": 478,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "leave",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 2,
+            "deprel": "xcomp",
+            "start": 479,
+            "end": 484,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 484,
+            "end": 485,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 5,
+            "deprel": "dep",
+            "start": 485,
+            "end": 487,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "infinitive"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Mary persuaded John to leave.",
+    "sentences": [
+      {
+        "id": 16,
+        "text": "Mary persuaded John to leave.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 487,
+            "end": 491,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "persuaded",
+            "lemma": "persuade",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 492,
+            "end": 501,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "dobj",
+            "start": 502,
+            "end": 506,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "to",
+            "lemma": "to",
+            "upos": "PART",
+            "xpos": "TO",
+            "feats": {},
+            "head": 5,
+            "deprel": "aux",
+            "start": 507,
+            "end": 509,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "leave",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 2,
+            "deprel": "xcomp",
+            "start": 510,
+            "end": 515,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 515,
+            "end": 516,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 6,
+            "deprel": "dep",
+            "start": 516,
+            "end": 518,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "object_control"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "John reviewed and approved the draft.",
+    "sentences": [
+      {
+        "id": 17,
+        "text": "John reviewed and approved the draft.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": 518,
+            "end": 522,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "reviewed",
+            "lemma": "review",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 523,
+            "end": 531,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "and",
+            "lemma": "and",
+            "upos": "CCONJ",
+            "xpos": "CC",
+            "feats": {
+              "ConjType": "Cmp"
+            },
+            "head": 2,
+            "deprel": "cc",
+            "start": 532,
+            "end": 535,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "approved",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "conj",
+            "start": 536,
+            "end": 544,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": 545,
+            "end": 548,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "draft",
+            "lemma": "draft",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 549,
+            "end": 554,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 2,
+            "deprel": "punct",
+            "start": 554,
+            "end": 555,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 555,
+            "end": 557,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "coordination"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "The engineer who reviewed the report found an error.",
+    "sentences": [
+      {
+        "id": 18,
+        "text": "The engineer who reviewed the report found an error.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 2,
+            "deprel": "det",
+            "start": 557,
+            "end": 560,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "engineer",
+            "lemma": "engineer",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 7,
+            "deprel": "nsubj",
+            "start": 561,
+            "end": 569,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "who",
+            "lemma": "who",
+            "upos": "PRON",
+            "xpos": "WP",
+            "feats": {},
+            "head": 4,
+            "deprel": "nsubj",
+            "start": 570,
+            "end": 573,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "reviewed",
+            "lemma": "review",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "relcl",
+            "start": 574,
+            "end": 582,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": 583,
+            "end": 586,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 587,
+            "end": 593,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "found",
+            "lemma": "find",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 594,
+            "end": 599,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "an",
+            "lemma": "an",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Ind",
+              "PronType": "Art"
+            },
+            "head": 9,
+            "deprel": "det",
+            "start": 600,
+            "end": 602,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "error",
+            "lemma": "error",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 7,
+            "deprel": "dobj",
+            "start": 603,
+            "end": 608,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 7,
+            "deprel": "punct",
+            "start": 608,
+            "end": 609,
+            "misc": {}
+          },
+          {
+            "id": 11,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 10,
+            "deprel": "dep",
+            "start": 609,
+            "end": 611,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "relative_clause"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Not every student passed the exam.",
+    "sentences": [
+      {
+        "id": 19,
+        "text": "Not every student passed the exam.\n\n",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 3,
+            "deprel": "neg",
+            "start": 611,
+            "end": 614,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "every",
+            "lemma": "every",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {},
+            "head": 3,
+            "deprel": "det",
+            "start": 615,
+            "end": 620,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "student",
+            "lemma": "student",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": 621,
+            "end": 628,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "passed",
+            "lemma": "pass",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 629,
+            "end": 635,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": 636,
+            "end": 639,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "exam",
+            "lemma": "exam",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "dobj",
+            "start": 640,
+            "end": 644,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 4,
+            "deprel": "punct",
+            "start": 644,
+            "end": 645,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "\n\n",
+            "lemma": "\n\n",
+            "upos": "SPACE",
+            "xpos": "_SP",
+            "feats": {},
+            "head": 7,
+            "deprel": "dep",
+            "start": 645,
+            "end": 647,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "quantifier"
+  },
+  {
+    "parser": "spacy",
+    "lang": "en",
+    "text": "Although John was tired, he did not send the report because Mary had not approved it yet.",
+    "sentences": [
+      {
+        "id": 20,
+        "text": "Although John was tired, he did not send the report because Mary had not approved it yet.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Although",
+            "lemma": "although",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 3,
+            "deprel": "mark",
+            "start": 647,
+            "end": 655,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": 656,
+            "end": 660,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "was",
+            "lemma": "be",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "advcl",
+            "start": 661,
+            "end": 664,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "tired",
+            "lemma": "tired",
+            "upos": "ADJ",
+            "xpos": "JJ",
+            "feats": {
+              "Degree": "Pos"
+            },
+            "head": 3,
+            "deprel": "acomp",
+            "start": 665,
+            "end": 670,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "xpos": ",",
+            "feats": {
+              "PunctType": "Comm"
+            },
+            "head": 9,
+            "deprel": "punct",
+            "start": 670,
+            "end": 671,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "he",
+            "lemma": "he",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Nom",
+              "Gender": "Masc",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 9,
+            "deprel": "nsubj",
+            "start": 672,
+            "end": 674,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "aux",
+            "start": 675,
+            "end": 678,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 9,
+            "deprel": "neg",
+            "start": 679,
+            "end": 682,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": 683,
+            "end": 687,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 11,
+            "deprel": "det",
+            "start": 688,
+            "end": 691,
+            "misc": {}
+          },
+          {
+            "id": 11,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 9,
+            "deprel": "dobj",
+            "start": 692,
+            "end": 698,
+            "misc": {}
+          },
+          {
+            "id": 12,
+            "text": "because",
+            "lemma": "because",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 16,
+            "deprel": "mark",
+            "start": 699,
+            "end": 706,
+            "misc": {}
+          },
+          {
+            "id": 13,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 16,
+            "deprel": "nsubj",
+            "start": 707,
+            "end": 711,
+            "misc": {}
+          },
+          {
+            "id": 14,
+            "text": "had",
+            "lemma": "have",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 16,
+            "deprel": "aux",
+            "start": 712,
+            "end": 715,
+            "misc": {}
+          },
+          {
+            "id": 15,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {
+              "Polarity": "Neg"
+            },
+            "head": 16,
+            "deprel": "neg",
+            "start": 716,
+            "end": 719,
+            "misc": {}
+          },
+          {
+            "id": 16,
+            "text": "approved",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBN",
+            "feats": {
+              "Aspect": "Perf",
+              "Tense": "Past",
+              "VerbForm": "Part"
+            },
+            "head": 9,
+            "deprel": "advcl",
+            "start": 720,
+            "end": 728,
+            "misc": {}
+          },
+          {
+            "id": 17,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 16,
+            "deprel": "dobj",
+            "start": 729,
+            "end": 731,
+            "misc": {}
+          },
+          {
+            "id": 18,
+            "text": "yet",
+            "lemma": "yet",
+            "upos": "ADV",
+            "xpos": "RB",
+            "feats": {},
+            "head": 16,
+            "deprel": "advmod",
+            "start": 732,
+            "end": 735,
+            "misc": {}
+          },
+          {
+            "id": 19,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {
+              "PunctType": "Peri"
+            },
+            "head": 9,
+            "deprel": "punct",
+            "start": 735,
+            "end": 736,
+            "misc": {}
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "en_core_web_sm",
+      "note": "spaCy native dependency labels are preserved; they are not UD labels."
+    },
+    "case": "nested_clauses"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John sent the report to Mary.",
+    "sentences": [
+      {
+        "id": 1,
+        "text": "John sent the report to Mary.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "sent",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 4,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "to",
+            "lemma": "to",
+            "upos": "ADP",
+            "xpos": "IN",
+            "feats": {},
+            "head": 6,
+            "deprel": "case",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "obl",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "assertion"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John did not send the report.",
+    "sentences": [
+      {
+        "id": 2,
+        "text": "John did not send the report.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 4,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "negation"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Alice may not approve the proposal.",
+    "sentences": [
+      {
+        "id": 3,
+        "text": "Alice may not approve the proposal.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "may",
+            "lemma": "may",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 4,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "approve",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "proposal",
+            "lemma": "proposal",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "modal_negation"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Alice must not open the door.",
+    "sentences": [
+      {
+        "id": 4,
+        "text": "Alice must not open the door.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "must",
+            "lemma": "must",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 4,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "open",
+            "lemma": "open",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "door",
+            "lemma": "door",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "prohibition"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "The report was approved by Mary.",
+    "sentences": [
+      {
+        "id": 5,
+        "text": "The report was approved by Mary.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 2,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj:pass",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "was",
+            "lemma": "be",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux:pass",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "approved",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBN",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Part",
+              "Voice": "Pass"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "by",
+            "lemma": "by",
+            "upos": "ADP",
+            "xpos": "IN",
+            "feats": {},
+            "head": 6,
+            "deprel": "case",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obl",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "passive"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John is not tired.",
+    "sentences": [
+      {
+        "id": 6,
+        "text": "John is not tired.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "is",
+            "lemma": "be",
+            "upos": "AUX",
+            "xpos": "VBZ",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "cop",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 4,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "tired",
+            "lemma": "tired",
+            "upos": "ADJ",
+            "xpos": "JJ",
+            "feats": {
+              "Degree": "Pos"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "copular_negation"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Did Alice approve the proposal?",
+    "sentences": [
+      {
+        "id": 7,
+        "text": "Did Alice approve the proposal?",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 3,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "approve",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 5,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "proposal",
+            "lemma": "proposal",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": "?",
+            "lemma": "?",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 3,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "yes_no_question"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Why did Alice reject it?",
+    "sentences": [
+      {
+        "id": 8,
+        "text": "Why did Alice reject it?",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Why",
+            "lemma": "why",
+            "upos": "ADV",
+            "xpos": "WRB",
+            "feats": {
+              "PronType": "Int"
+            },
+            "head": 4,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "reject",
+            "lemma": "reject",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": "?",
+            "lemma": "?",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "why_question"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "I know why John left.",
+    "sentences": [
+      {
+        "id": 9,
+        "text": "I know why John left.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "I",
+            "lemma": "I",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Nom",
+              "Number": "Sing",
+              "Person": "1",
+              "PronType": "Prs"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "know",
+            "lemma": "know",
+            "upos": "VERB",
+            "xpos": "VBP",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "why",
+            "lemma": "why",
+            "upos": "ADV",
+            "xpos": "WRB",
+            "feats": {
+              "PronType": "Int"
+            },
+            "head": 5,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "left",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "ccomp",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "embedded_question"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Send the report to Mary.",
+    "sentences": [
+      {
+        "id": 10,
+        "text": "Send the report to Mary.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "Mood": "Imp",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 3,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 1,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "to",
+            "lemma": "to",
+            "upos": "ADP",
+            "xpos": "IN",
+            "feats": {},
+            "head": 5,
+            "deprel": "case",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 1,
+            "deprel": "obl",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 1,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "imperative"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "If Alice approves the proposal, Bob will deploy it.",
+    "sentences": [
+      {
+        "id": 11,
+        "text": "If Alice approves the proposal, Bob will deploy it.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "If",
+            "lemma": "if",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 3,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "Alice",
+            "lemma": "Alice",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "approves",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBZ",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "advcl",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 5,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "proposal",
+            "lemma": "proposal",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "xpos": ",",
+            "feats": {},
+            "head": 9,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "Bob",
+            "lemma": "Bob",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 9,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "will",
+            "lemma": "will",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "deploy",
+            "lemma": "deploy",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 9,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 11,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 9,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "condition"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Unless Mary approves the report, John will not send it.",
+    "sentences": [
+      {
+        "id": 12,
+        "text": "Unless Mary approves the report, John will not send it.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Unless",
+            "lemma": "unless",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 3,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "approves",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBZ",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 10,
+            "deprel": "advcl",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 5,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 3,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "xpos": ",",
+            "feats": {},
+            "head": 10,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 10,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "will",
+            "lemma": "will",
+            "upos": "AUX",
+            "xpos": "MD",
+            "feats": {
+              "VerbForm": "Fin"
+            },
+            "head": 10,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 10,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": "send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 11,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 10,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 12,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 10,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "unless"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John left because Mary arrived.",
+    "sentences": [
+      {
+        "id": 13,
+        "text": "John left because Mary arrived.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "left",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "because",
+            "lemma": "because",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 5,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "arrived",
+            "lemma": "arrive",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "advcl",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "cause"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John left once Mary arrived.",
+    "sentences": [
+      {
+        "id": 14,
+        "text": "John left once Mary arrived.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "left",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "once",
+            "lemma": "once",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 5,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 5,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "arrived",
+            "lemma": "arrive",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "advcl",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "temporal_once"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John wants to leave.",
+    "sentences": [
+      {
+        "id": 15,
+        "text": "John wants to leave.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "wants",
+            "lemma": "want",
+            "upos": "VERB",
+            "xpos": "VBZ",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Pres",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "to",
+            "lemma": "to",
+            "upos": "PART",
+            "xpos": "TO",
+            "feats": {},
+            "head": 4,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "leave",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 2,
+            "deprel": "xcomp",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 5,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "infinitive"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Mary persuaded John to leave.",
+    "sentences": [
+      {
+        "id": 16,
+        "text": "Mary persuaded John to leave.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "persuaded",
+            "lemma": "persuade",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "to",
+            "lemma": "to",
+            "upos": "PART",
+            "xpos": "TO",
+            "feats": {},
+            "head": 5,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "leave",
+            "lemma": "leave",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 2,
+            "deprel": "xcomp",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 6,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "object_control"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "John reviewed and approved the draft.",
+    "sentences": [
+      {
+        "id": 17,
+        "text": "John reviewed and approved the draft.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 2,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "reviewed",
+            "lemma": "review",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "and",
+            "lemma": "and",
+            "upos": "CCONJ",
+            "xpos": "CC",
+            "feats": {},
+            "head": 4,
+            "deprel": "cc",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "approved",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "conj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "draft",
+            "lemma": "draft",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 2,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "coordination"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "The engineer who reviewed the report found an error.",
+    "sentences": [
+      {
+        "id": 18,
+        "text": "The engineer who reviewed the report found an error.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "The",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 2,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "engineer",
+            "lemma": "engineer",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 7,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "who",
+            "lemma": "who",
+            "upos": "PRON",
+            "xpos": "WP",
+            "feats": {
+              "PronType": "Rel"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "reviewed",
+            "lemma": "review",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 2,
+            "deprel": "acl:relcl",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "found",
+            "lemma": "find",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "an",
+            "lemma": "a",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Ind",
+              "PronType": "Art"
+            },
+            "head": 9,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "error",
+            "lemma": "error",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 7,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 10,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 7,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "relative_clause"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Not every student passed the exam.",
+    "sentences": [
+      {
+        "id": 19,
+        "text": "Not every student passed the exam.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 4,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "every",
+            "lemma": "every",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {},
+            "head": 3,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "student",
+            "lemma": "student",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "passed",
+            "lemma": "pass",
+            "upos": "VERB",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 5,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 6,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "exam",
+            "lemma": "exam",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 7,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 4,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "quantifier"
+  },
+  {
+    "parser": "udpipe",
+    "lang": "en",
+    "text": "Although John was tired, he did not send the report because Mary had not approved it yet.",
+    "sentences": [
+      {
+        "id": 20,
+        "text": "Although John was tired, he did not send the report because Mary had not approved it yet.",
+        "tokens": [
+          {
+            "id": 1,
+            "text": "Although",
+            "lemma": "although",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 4,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 2,
+            "text": "John",
+            "lemma": "John",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 4,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 3,
+            "text": "was",
+            "lemma": "be",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Number": "Sing",
+              "Person": "3",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 4,
+            "deprel": "cop",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 4,
+            "text": "tired",
+            "lemma": "tired",
+            "upos": "ADJ",
+            "xpos": "JJ",
+            "feats": {
+              "Degree": "Pos"
+            },
+            "head": 9,
+            "deprel": "advcl",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 5,
+            "text": ",",
+            "lemma": ",",
+            "upos": "PUNCT",
+            "xpos": ",",
+            "feats": {},
+            "head": 9,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 6,
+            "text": "he",
+            "lemma": "he",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Nom",
+              "Gender": "Masc",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 9,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 7,
+            "text": "did",
+            "lemma": "do",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 9,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 8,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 9,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 9,
+            "text": "send",
+            "lemma": "send",
+            "upos": "VERB",
+            "xpos": "VB",
+            "feats": {
+              "VerbForm": "Inf"
+            },
+            "head": 0,
+            "deprel": "root",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 10,
+            "text": "the",
+            "lemma": "the",
+            "upos": "DET",
+            "xpos": "DT",
+            "feats": {
+              "Definite": "Def",
+              "PronType": "Art"
+            },
+            "head": 11,
+            "deprel": "det",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 11,
+            "text": "report",
+            "lemma": "report",
+            "upos": "NOUN",
+            "xpos": "NN",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 9,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 12,
+            "text": "because",
+            "lemma": "because",
+            "upos": "SCONJ",
+            "xpos": "IN",
+            "feats": {},
+            "head": 16,
+            "deprel": "mark",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 13,
+            "text": "Mary",
+            "lemma": "Mary",
+            "upos": "PROPN",
+            "xpos": "NNP",
+            "feats": {
+              "Number": "Sing"
+            },
+            "head": 16,
+            "deprel": "nsubj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 14,
+            "text": "had",
+            "lemma": "have",
+            "upos": "AUX",
+            "xpos": "VBD",
+            "feats": {
+              "Mood": "Ind",
+              "Tense": "Past",
+              "VerbForm": "Fin"
+            },
+            "head": 16,
+            "deprel": "aux",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 15,
+            "text": "not",
+            "lemma": "not",
+            "upos": "PART",
+            "xpos": "RB",
+            "feats": {},
+            "head": 16,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 16,
+            "text": "approved",
+            "lemma": "approve",
+            "upos": "VERB",
+            "xpos": "VBN",
+            "feats": {
+              "Tense": "Past",
+              "VerbForm": "Part"
+            },
+            "head": 9,
+            "deprel": "advcl",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 17,
+            "text": "it",
+            "lemma": "it",
+            "upos": "PRON",
+            "xpos": "PRP",
+            "feats": {
+              "Case": "Acc",
+              "Gender": "Neut",
+              "Number": "Sing",
+              "Person": "3",
+              "PronType": "Prs"
+            },
+            "head": 16,
+            "deprel": "obj",
+            "start": null,
+            "end": null,
+            "misc": {}
+          },
+          {
+            "id": 18,
+            "text": "yet",
+            "lemma": "yet",
+            "upos": "ADV",
+            "xpos": "RB",
+            "feats": {},
+            "head": 16,
+            "deprel": "advmod",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpaceAfter": "No"
+            }
+          },
+          {
+            "id": 19,
+            "text": ".",
+            "lemma": ".",
+            "upos": "PUNCT",
+            "xpos": ".",
+            "feats": {},
+            "head": 9,
+            "deprel": "punct",
+            "start": null,
+            "end": null,
+            "misc": {
+              "SpacesAfter": "\\n"
+            }
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "/home/salboaie/work/nlp/deterministicFormliser/models/udpipe/en.udpipe"
+    },
+    "case": "nested_clauses"
+  }
+]

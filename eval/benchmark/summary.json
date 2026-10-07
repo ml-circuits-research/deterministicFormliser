@@ -1,0 +1,258 @@
+[
+  {
+    "parser": "spacy",
+    "split": "dev",
+    "round": 0,
+    "success": 23,
+    "total": 60,
+    "rate": 0.38333333333333336
+  },
+  {
+    "parser": "spacy",
+    "split": "dev",
+    "round": 1,
+    "success": 27,
+    "total": 60,
+    "rate": 0.45
+  },
+  {
+    "parser": "spacy",
+    "split": "dev",
+    "round": 2,
+    "success": 35,
+    "total": 60,
+    "rate": 0.5833333333333334
+  },
+  {
+    "parser": "spacy",
+    "split": "dev",
+    "round": 3,
+    "success": 50,
+    "total": 60,
+    "rate": 0.8333333333333334
+  },
+  {
+    "parser": "spacy",
+    "split": "dev",
+    "round": 4,
+    "success": 55,
+    "total": 60,
+    "rate": 0.9166666666666666
+  },
+  {
+    "parser": "spacy",
+    "split": "dev",
+    "round": 5,
+    "success": 57,
+    "total": 60,
+    "rate": 0.95
+  },
+  {
+    "parser": "spacy",
+    "split": "holdout",
+    "round": 0,
+    "success": 7,
+    "total": 20,
+    "rate": 0.35
+  },
+  {
+    "parser": "spacy",
+    "split": "holdout",
+    "round": 5,
+    "success": 15,
+    "total": 20,
+    "rate": 0.75
+  },
+  {
+    "parser": "stanza",
+    "split": "dev",
+    "round": 0,
+    "success": 23,
+    "total": 60,
+    "rate": 0.38333333333333336
+  },
+  {
+    "parser": "stanza",
+    "split": "dev",
+    "round": 1,
+    "success": 27,
+    "total": 60,
+    "rate": 0.45
+  },
+  {
+    "parser": "stanza",
+    "split": "dev",
+    "round": 2,
+    "success": 35,
+    "total": 60,
+    "rate": 0.5833333333333334
+  },
+  {
+    "parser": "stanza",
+    "split": "dev",
+    "round": 3,
+    "success": 49,
+    "total": 60,
+    "rate": 0.8166666666666667
+  },
+  {
+    "parser": "stanza",
+    "split": "dev",
+    "round": 4,
+    "success": 54,
+    "total": 60,
+    "rate": 0.9
+  },
+  {
+    "parser": "stanza",
+    "split": "dev",
+    "round": 5,
+    "success": 58,
+    "total": 60,
+    "rate": 0.9666666666666667
+  },
+  {
+    "parser": "stanza",
+    "split": "holdout",
+    "round": 0,
+    "success": 4,
+    "total": 20,
+    "rate": 0.2
+  },
+  {
+    "parser": "stanza",
+    "split": "holdout",
+    "round": 5,
+    "success": 15,
+    "total": 20,
+    "rate": 0.75
+  },
+  {
+    "parser": "trankit",
+    "split": "dev",
+    "round": 0,
+    "success": 25,
+    "total": 60,
+    "rate": 0.4166666666666667
+  },
+  {
+    "parser": "trankit",
+    "split": "dev",
+    "round": 1,
+    "success": 28,
+    "total": 60,
+    "rate": 0.4666666666666667
+  },
+  {
+    "parser": "trankit",
+    "split": "dev",
+    "round": 2,
+    "success": 37,
+    "total": 60,
+    "rate": 0.6166666666666667
+  },
+  {
+    "parser": "trankit",
+    "split": "dev",
+    "round": 3,
+    "success": 51,
+    "total": 60,
+    "rate": 0.85
+  },
+  {
+    "parser": "trankit",
+    "split": "dev",
+    "round": 4,
+    "success": 57,
+    "total": 60,
+    "rate": 0.95
+  },
+  {
+    "parser": "trankit",
+    "split": "dev",
+    "round": 5,
+    "success": 60,
+    "total": 60,
+    "rate": 1.0
+  },
+  {
+    "parser": "trankit",
+    "split": "holdout",
+    "round": 0,
+    "success": 4,
+    "total": 20,
+    "rate": 0.2
+  },
+  {
+    "parser": "trankit",
+    "split": "holdout",
+    "round": 5,
+    "success": 15,
+    "total": 20,
+    "rate": 0.75
+  },
+  {
+    "parser": "udpipe",
+    "split": "dev",
+    "round": 0,
+    "success": 19,
+    "total": 60,
+    "rate": 0.31666666666666665
+  },
+  {
+    "parser": "udpipe",
+    "split": "dev",
+    "round": 1,
+    "success": 24,
+    "total": 60,
+    "rate": 0.4
+  },
+  {
+    "parser": "udpipe",
+    "split": "dev",
+    "round": 2,
+    "success": 33,
+    "total": 60,
+    "rate": 0.55
+  },
+  {
+    "parser": "udpipe",
+    "split": "dev",
+    "round": 3,
+    "success": 46,
+    "total": 60,
+    "rate": 0.7666666666666667
+  },
+  {
+    "parser": "udpipe",
+    "split": "dev",
+    "round": 4,
+    "success": 50,
+    "total": 60,
+    "rate": 0.8333333333333334
+  },
+  {
+    "parser": "udpipe",
+    "split": "dev",
+    "round": 5,
+    "success": 54,
+    "total": 60,
+    "rate": 0.9
+  },
+  {
+    "parser": "udpipe",
+    "split": "holdout",
+    "round": 0,
+    "success": 5,
+    "total": 20,
+    "rate": 0.25
+  },
+  {
+    "parser": "udpipe",
+    "split": "holdout",
+    "round": 5,
+    "success": 17,
+    "total": 20,
+    "rate": 0.85
+  }
+]

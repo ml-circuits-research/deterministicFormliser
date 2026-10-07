@@ -1,0 +1,1029 @@
+{
+  "parser": "trankit",
+  "split": "holdout",
+  "round": 0,
+  "analysis_sha256": "28f0d2a7c4daddab6e2c709b29b8fbcbc91128f0b95220839b06f7ce93c2d033",
+  "renderer_sha256": "015d45e3bc18f3478c31db730d5b3c9e6a6ab5d897c33ab5718e84568c6b9bbd",
+  "rows": [
+    {
+      "case": {
+        "id": "h01",
+        "split": "holdout",
+        "phenomenon": "passive plus cause",
+        "source": "The flight was cancelled by the airline because heavy snow had closed the runway."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The flight was cancelled by the airline because heavy snow had closed the runway.",
+        "cnl": "ASSERT: Because heavy snow had closed the runway, The flight was cancelled by the airline.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Because heavy snow had closed the runway, The flight was cancelled by the airline.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h02",
+        "split": "holdout",
+        "phenomenon": "embedded question",
+        "source": "Nobody knows why the alarm stopped working during the night."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Nobody knows why the alarm stopped working during the night.",
+        "cnl": "ASSERT: Nobody knows why the alarm stopped working during the night.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Nobody knows why the alarm stopped working during the night.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h03",
+        "split": "holdout",
+        "phenomenon": "wh object question",
+        "source": "Which apartment did the agent show you after lunch?"
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Which apartment did the agent show you after lunch?",
+        "cnl": "ASK WHETHER: the agent did show Which apartment you after lunch.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: the agent did show Which apartment you after lunch.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "WH question type and/or argument order incorrect",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h04",
+        "split": "holdout",
+        "phenomenon": "negative request",
+        "source": "Please do not give the patient another dose until the doctor returns."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Please do not give the patient another dose until the doctor returns.",
+        "cnl": "COMMAND: Until the doctor returns, do not give the patient another dose.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "COMMAND",
+            "text": "COMMAND: Until the doctor returns, do not give the patient another dose.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Politeness/command speech act or dose argument omitted",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h05",
+        "split": "holdout",
+        "phenomenon": "relative clause",
+        "source": "The laptop that I bought last month has already stopped charging."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The laptop that I bought last month has already stopped charging.",
+        "cnl": "ASSERT: The laptop has stopped charging already.",
+        "coverage": 0.5454545454545454,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The laptop has stopped charging already.",
+            "coverage": 0.5454545454545454,
+            "consumed_token_ids": [
+              1,
+              2,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [
+              {
+                "id": 3,
+                "text": "that",
+                "deprel": "obj",
+                "upos": "PRON"
+              },
+              {
+                "id": 4,
+                "text": "I",
+                "deprel": "nsubj",
+                "upos": "PRON"
+              },
+              {
+                "id": 5,
+                "text": "bought",
+                "deprel": "acl:relcl",
+                "upos": "VERB"
+              },
+              {
+                "id": 6,
+                "text": "last",
+                "deprel": "amod",
+                "upos": "ADJ"
+              },
+              {
+                "id": 7,
+                "text": "month",
+                "deprel": "obl:tmod",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: that/obj, I/nsubj, bought/acl:relcl, last/amod, month/obl:tmod"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: that/obj, I/nsubj, bought/acl:relcl, last/amod, month/obl:tmod"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Relative modifier omitted",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h06",
+        "split": "holdout",
+        "phenomenon": "interjection mixture",
+        "source": "Wow! The garden looks beautiful, but the gate still needs to be repaired."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Wow! The garden looks beautiful, but the gate still needs to be repaired.",
+        "cnl": "ASSERT: wow.\nASSERT: The garden looks beautiful but the gate needs to be repaired still.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: wow.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 2,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The garden looks beautiful but the gate needs to be repaired still.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Interjection asserted as proposition",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h07",
+        "split": "holdout",
+        "phenomenon": "quantifier",
+        "source": "Not all passengers were able to find a seat."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Not all passengers were able to find a seat.",
+        "cnl": "ASSERT: Not all passengers were Not all able.",
+        "coverage": 0.5555555555555556,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Not all passengers were Not all able.",
+            "coverage": 0.5555555555555556,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "unresolved": [
+              {
+                "id": 6,
+                "text": "to",
+                "deprel": "mark",
+                "upos": "PART"
+              },
+              {
+                "id": 7,
+                "text": "find",
+                "deprel": "xcomp",
+                "upos": "VERB"
+              },
+              {
+                "id": 8,
+                "text": "a",
+                "deprel": "det",
+                "upos": "DET"
+              },
+              {
+                "id": 9,
+                "text": "seat",
+                "deprel": "obj",
+                "upos": "NOUN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: to/mark, find/xcomp, a/det, seat/obj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: to/mark, find/xcomp, a/det, seat/obj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Infinitive or copular scope lost",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h08",
+        "split": "holdout",
+        "phenomenon": "control",
+        "source": "The coach reminded the players to drink water before the match."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The coach reminded the players to drink water before the match.",
+        "cnl": "ASSERT: The coach the reminded players to drink water before the match.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The coach the reminded players to drink water before the match.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Determiner attached to wrong participant",
+        "attribution": "parser",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h09",
+        "split": "holdout",
+        "phenomenon": "long condition",
+        "source": "If the laboratory confirms the result and the patient agrees, the doctor will change the treatment after discussing the possible side effects."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "If the laboratory confirms the result and the patient agrees, the doctor will change the treatment after discussing the possible side effects.",
+        "cnl": "ASSERT: After discussing the possible side effects, If the laboratory confirms the result and the patient agrees, the doctor will change the treatment.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: After discussing the possible side effects, If the laboratory confirms the result and the patient agrees, the doctor will change the treatment.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Temporal clause moved across conditional scope into a malformed fronted sequence",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h10",
+        "split": "holdout",
+        "phenomenon": "direct quotation",
+        "source": "The guard shouted, \"Stop!\""
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The guard shouted, \"Stop!\"",
+        "cnl": "ASSERT: The guard shouted stop.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The guard shouted stop.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              6
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Quoted command attribution boundaries lost",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h11",
+        "split": "holdout",
+        "phenomenon": "fragment",
+        "source": "A table for four, please."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "A table for four, please.",
+        "cnl": "ASSERT: table for four.",
+        "coverage": 0.75,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: table for four.",
+            "coverage": 0.75,
+            "consumed_token_ids": [
+              2,
+              3,
+              4
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "A",
+                "deprel": "det",
+                "upos": "DET"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: A/det"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: A/det"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Request fragment asserted",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h12",
+        "split": "holdout",
+        "phenomenon": "existential negation",
+        "source": "There are no available appointments before Thursday."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "There are no available appointments before Thursday.",
+        "cnl": "ASSERT: no available appointments are before Thursday.",
+        "coverage": 0.8571428571428571,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: no available appointments are before Thursday.",
+            "coverage": 0.8571428571428571,
+            "consumed_token_ids": [
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "unresolved": [
+              {
+                "id": 1,
+                "text": "There",
+                "deprel": "expl",
+                "upos": "PRON"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: There/expl"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: There/expl"
+        ]
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h13",
+        "split": "holdout",
+        "phenomenon": "shared auxiliary",
+        "source": "The volunteers have cleaned and painted the community hall."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The volunteers have cleaned and painted the community hall.",
+        "cnl": "ASSERT: The volunteers have cleaned the community hall and The volunteers painted.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: The volunteers have cleaned the community hall and The volunteers painted.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Shared perfect auxiliary/object scope broken",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h14",
+        "split": "holdout",
+        "phenomenon": "negative coordination",
+        "source": "The applicant did not upload or sign the required documents."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The applicant did not upload or sign the required documents.",
+        "cnl": "ASSERT: either The applicant did not upload the required documents or The applicant sign.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: either The applicant did not upload the required documents or The applicant sign.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Negative coordination scope changed by either/or",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h15",
+        "split": "holdout",
+        "phenomenon": "tag question",
+        "source": "The new password works, doesn't it?"
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "The new password works, doesn't it?",
+        "cnl": "ASK WHETHER: The new password works doesn't.",
+        "coverage": 0.8333333333333334,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: The new password works doesn't.",
+            "coverage": 0.8333333333333334,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              6
+            ],
+            "unresolved": [
+              {
+                "id": 7,
+                "text": "it",
+                "deprel": "nsubj",
+                "upos": "PRON"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: it/nsubj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: it/nsubj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Question tag lost or corrupted",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h16",
+        "split": "holdout",
+        "phenomenon": "counterfactual",
+        "source": "If the driver had noticed the sign, she would not have entered the private road."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "If the driver had noticed the sign, she would not have entered the private road.",
+        "cnl": "ASSERT: If the driver had noticed the sign, she would not have entered the private road.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: If the driver had noticed the sign, she would not have entered the private road.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "success",
+        "reason": "Meaning and speech acts preserved",
+        "attribution": "none",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h17",
+        "split": "holdout",
+        "phenomenon": "long indirect question",
+        "source": "Could you explain why the bill includes a delivery fee even though the website promised free shipping for orders above thirty euros?"
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Could you explain why the bill includes a delivery fee even though the website promised free shipping for orders above thirty euros?",
+        "cnl": "ASK WHETHER: Why Though the website promised free shipping for orders above thirty euros even, the bill includes a delivery fee, you could explain.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: Why Though the website promised free shipping for orders above thirty euros even, the bill includes a delivery fee, you could explain.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Nested request/embedded clause and concessive relation corrupted",
+        "attribution": "mixed",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h18",
+        "split": "holdout",
+        "phenomenon": "comparison",
+        "source": "This route is shorter than the highway, but it becomes dangerous when the temperature falls below zero."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "This route is shorter than the highway, but it becomes dangerous when the temperature falls below zero.",
+        "cnl": "ASSERT: This route is This shorter than the highway but it becomes When the temperature falls below zero, dangerous.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: This route is This shorter than the highway but it becomes When the temperature falls below zero, dangerous.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Predicate or subordinate attachment malformed",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h19",
+        "split": "holdout",
+        "phenomenon": "gratitude and request",
+        "source": "Thank you! Could you leave the receipt on the kitchen table?"
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Thank you! Could you leave the receipt on the kitchen table?",
+        "cnl": "ASSERT: thank you.\nASK WHETHER: you could leave the receipt on the kitchen table.",
+        "coverage": 1.0,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: thank you.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2
+            ],
+            "unresolved": [],
+            "warnings": []
+          },
+          {
+            "sentence_id": 2,
+            "speech_act": "QUESTION_YN",
+            "text": "ASK WHETHER: you could leave the receipt on the kitchen table.",
+            "coverage": 1.0,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "unresolved": [],
+            "warnings": []
+          }
+        ],
+        "warnings": []
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Gratitude and indirect request speech acts not preserved",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    },
+    {
+      "case": {
+        "id": "h20",
+        "split": "holdout",
+        "phenomenon": "ellipsis",
+        "source": "Lena chose the blue jacket, and Omar the green one."
+      },
+      "output": {
+        "parser": "trankit",
+        "lang": "en",
+        "source_text": "Lena chose the blue jacket, and Omar the green one.",
+        "cnl": "ASSERT: Lena chose the blue jacket and the green one.",
+        "coverage": 0.9,
+        "statements": [
+          {
+            "sentence_id": 1,
+            "speech_act": "ASSERT",
+            "text": "ASSERT: Lena chose the blue jacket and the green one.",
+            "coverage": 0.9,
+            "consumed_token_ids": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              7,
+              9,
+              10,
+              11
+            ],
+            "unresolved": [
+              {
+                "id": 8,
+                "text": "Omar",
+                "deprel": "nsubj",
+                "upos": "PROPN"
+              }
+            ],
+            "warnings": [
+              "unresolved semantic material: Omar/nsubj"
+            ]
+          }
+        ],
+        "warnings": [
+          "sentence 1: unresolved semantic material: Omar/nsubj"
+        ]
+      },
+      "judgment": {
+        "verdict": "failure",
+        "reason": "Elliptical clause loses participant",
+        "attribution": "renderer",
+        "judge": "assistant qualitative review after round 5; no tuning on these outputs"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+numpy<2
+adapters==0.1.2
+huggingface-hub<0.26
+git+https://github.com/nlp-uoregon/trankit.git@54e863327391262cf72f6adc1b0ff104e972a1dc
